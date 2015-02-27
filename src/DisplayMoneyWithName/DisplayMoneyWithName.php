@@ -27,13 +27,13 @@ class DisplayMoneyWithName extends PluginBase implements Listener
     public function onPlayerJoin(PlayerJoinEvent $event)
     {
         $p = $event->getPlayer();
-        $tag = "[" . $this->getServer()->getPluginManager()->getPlugin("PocketMoney")->getMoney($p->getName()) . " PM]";
+        $tag = "[" . $this->getServer()->getPluginManager()->getPlugin("PocketMoney")->getMoney($p->getName()) . " PM]" . $p->getName();
         $p->setNameTag($tag);
     }
 
     public function onMoneyUpdate(MoneyUpdateEvent $event)
     {
-        $tag = "[" . $event->getAmount() . " PM]";
+        $tag = "[" . $event->getAmount() . " PM]" . $event->getPlayer()->getName();
         $event->getPlayer()->setNameTag($tag);
     }
 }
