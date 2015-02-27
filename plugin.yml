@@ -1,0 +1,11 @@
+name: DisplayMoneyWithName
+main: DisplayMoneyWithName\DisplayMoneyWithName
+version: 1.0
+api: [1.10.0]
+load: POSTWORLD
+author: MinecrafterJPN
+authors: [MinecrafterJPN]
+description: "Display money with username"
+website: "https://github.com/MinecrafterJPN/DisplayMoneyWithName"
+depend:
+ - PocketMoney
