@@ -28,7 +28,7 @@ class DisplayMoneyWithName extends PluginBase implements Listener
     {
         $p = $event->getPlayer();
         $tag = "[" . $this->getServer()->getPluginManager()->getPlugin("PocketMoney")->getMoney($p->getName()) . " PM]";
-        $p->setNameTag("[$tag PM]");
+        $p->setNameTag($tag);
     }
 
     public function onMoneyUpdate(MoneyUpdateEvent $event)
