@@ -4,7 +4,6 @@ namespace DisplayMoneyWithName;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
-use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use PocketMoney\event\MoneyUpdateEvent;
 
@@ -33,7 +32,7 @@ class DisplayMoneyWithName extends PluginBase implements Listener
 
     public function onMoneyUpdate(MoneyUpdateEvent $event)
     {
-        $tag = "[" . $event->getAmount() . " PM] " . $event->getPlayer()->getName();
+        $tag = "[" . $event->getAmount() . " PM] " . $event->getPlayer();
         $event->getPlayer()->setNameTag($tag);
     }
 }
