@@ -10,16 +10,16 @@ use PocketMoney\event\MoneyUpdateEvent;
 class DisplayMoneyWithName extends PluginBase implements Listener
 {
 
-    public function onLoad()
+    public function onLoad(): void
     {
     }
 
-    public function onEnable()
+    public function onEnable(): void
     {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
-    public function onDisable()
+    public function onDisable(): void
     {
     }
 

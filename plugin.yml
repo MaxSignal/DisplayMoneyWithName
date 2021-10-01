@@ -1,7 +1,7 @@
 name: DisplayMoneyWithName
 main: DisplayMoneyWithName\DisplayMoneyWithName
-version: 1.1
-api: [1.10.0]
+version: 1.1.1
+api: [3.0.0, 4.0.0]
 load: POSTWORLD
 author: MinecrafterJPN
 authors: [MinecrafterJPN]
